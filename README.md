@@ -13,7 +13,7 @@
 
 5. รันโปรเจค  
    - กดปุ่ม **Run** (หรือปุ่ม F5)  
-   - โปรแกรมจะเริ่มทำงาน และ API จะรันบน `http://localhost:5138`
+   - โปรแกรมจะเริ่มทำงาน และ API จะรันบน `http://localhost:{port number}
 
 ## เปิด Postman → Import → เลือกไฟล์:  
    Postman/EmployeeAPI.postman_collection.json
