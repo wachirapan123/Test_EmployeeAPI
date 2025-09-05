@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "0e37608c-e3c3-413a-84d0-f4c53665f42e",
+		"name": "Employee API Test",
+		"description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48160442",
+		"_collection_link": "https://flukehaedcore-7107285.postman.co/workspace/Wachirapan-songwon's-Workspace~faa2e51c-de51-4819-8e51-cb72846714c1/collection/48160442-0e37608c-e3c3-413a-84d0-f4c53665f42e?action=share&source=collection_link&creator=48160442"
+	},
+	"item": [
+		{
+			"name": "Add Employee",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"empNo\": 1011,\r\n  \"firstName\": \"NOG\",\r\n  \"lastName\": \"LIN\",\r\n  \"designation\": \"BA\",\r\n  \"hireDate\": \"17-Aug-99\",\r\n  \"salary\": 100,\r\n  \"comm\": \"200\",\r\n  \"deptNo\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5138/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5138",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5138/api/employees/1001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5138",
+					"path": [
+						"api",
+						"employees",
+						"1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"ALICE\",\r\n  \"lastName\": \"JOHNSON\",\r\n  \"designation\": \"SENIOR DEVELOPER\",\r\n  \"hireDate\": \"01-Aug-90\",\r\n  \"salary\": 99900,\r\n  \"comm\": \"500\",\r\n  \"deptNo\": 10\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5138/api/employees/1011",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5138",
+					"path": [
+						"api",
+						"employees",
+						"1011"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5138/api/employees/1011",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5138",
+					"path": [
+						"api",
+						"employees",
+						"1011"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5138/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5138",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
