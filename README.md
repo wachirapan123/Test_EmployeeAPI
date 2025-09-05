@@ -4,14 +4,14 @@
 
 ## วิธีรัน
 1. ดาวน์โหลดไฟล์โปรเจคจาก GitHub  
-   https://github.com/wachirapan123/employee-api-test
+   https://github.com/wachirapan123/Test_EmployeeAPI
 
-2. แตกไฟล์ (ถ้าเป็น .zip) หรือ clone ด้วย Git
+3. แตกไฟล์ (ถ้าเป็น .zip) หรือ clone ด้วย Git
 
-3. เปิดโปรเจคใน **Visual Studio **  
+4. เปิดโปรเจคใน **Visual Studio **  
    - เปิดไฟล์ `.sln` ของโปรเจค
 
-4. รันโปรเจค  
+5. รันโปรเจค  
    - กดปุ่ม **Run** (หรือปุ่ม F5)  
    - โปรแกรมจะเริ่มทำงาน และ API จะรันบน `http://localhost:5138`
 
